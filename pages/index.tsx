@@ -125,13 +125,13 @@ type ErrorContainer = {
 }
 const errorBag: ErrorContainer = {
   email: '正しいメールアドレスではありません',
-  username: 'ユーザー名に記号を含めることはできません',
+  username: 'ユーザー名に記号を含めることはできません。',
 }
 
 const index = () => {
   useEffect(() => {
     const userInputElement = document.getElementById("user-input")! as HTMLInputElement;
-    userInputElement.value = 'Hi!'
+    userInputElement.value = 'Hi!!'
 
   })
   return (
